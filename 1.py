@@ -37,7 +37,7 @@ for weights in ['uniform', 'distance']:
     plt.figure()
     plt.pcolormesh(xx, yy, Z, cmap=cmap_light)
 
-    # Параметры процесса обучения
+    # Процесс обучения
     plt.scatter(X[:, 0], X[:, 1], c=y, cmap=cmap_bold,
                 edgecolor='k', s=20)
     plt.xlim(xx.min(), xx.max())
