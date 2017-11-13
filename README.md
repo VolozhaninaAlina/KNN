@@ -49,7 +49,7 @@ for weights in ['uniform', 'distance']:
     clf = neighbors.KNeighborsClassifier(n_neighbors, weights=weights)
     clf.fit(X, y)
  ```
-Отображаем обучающую выбору и полученные результаты.
+Отображаем обучающую выборку и полученные результаты.
 ```python
 # Выделяем границу решения, назначая цвет каждой точке [x_min, x_max] x [y_min, y_max].
     x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
